@@ -1,0 +1,45 @@
+/* App.module.css */
+:root {
+  --primary-blue: #0077b6;
+  --accent-blue: #00b4d8;
+  --yellow-highlight: #ffe066;
+  --light-bg: #f8f9fa;
+  --font-main: 'Poppins', sans-serif;
+}
+
+.appContainer {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f4f8;
+  color: #333;
+}
+
+.header {
+  background: #2c3e50;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mainContent {
+  padding: 2rem 1rem;
+  flex-grow: 1;
+}
+
+.suspenseLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light neutral for contrast */
+  font-family: 'Segoe UI', sans-serif;
+}

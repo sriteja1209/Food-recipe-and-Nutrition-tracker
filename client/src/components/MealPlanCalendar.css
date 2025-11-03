@@ -1,0 +1,102 @@
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  background: radial-gradient(circle at top left, #f0f9ff, #e0f2fe);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Days with meals */
+.calendar-has-meal {
+  background: linear-gradient(145deg, #34d399, #10b981) !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.5);
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+  background: linear-gradient(145deg, #3b82f6, #2563eb) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Calendar header buttons */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  color: #1e40af;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  color: #2563eb;
+}
+
+/* General tile styling */
+.react-calendar__tile {
+  padding: 1rem 0.75rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover state */
+.react-calendar__tile:hover {
+  background-color: #e0f2fe;
+  transform: scale(1.05);
+  font-weight: 500;
+}
+
+/* Focus effect */
+.react-calendar__tile:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+/* Weekdays & borders */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.react-calendar__month-view__days {
+  gap: 0.4rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    padding: 1rem;
+    min-height: 60vh;
+  }
+
+  .react-calendar__tile {
+    padding: 0.75rem 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .react-calendar__navigation button {
+    font-size: 1rem;
+  }
+}

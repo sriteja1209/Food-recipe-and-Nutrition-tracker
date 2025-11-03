@@ -1,0 +1,33 @@
+/* AdminUsers.css */
+
+/* General Styles for the Admin Users Page */
+.container {
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+button.btn-danger {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+}
+
+input.form-control {
+  width: 100%;
+  max-width: 400px;
+}
+
+.select.form-select {
+  max-width: 150px;
+}

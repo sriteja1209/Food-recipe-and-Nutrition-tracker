@@ -1,0 +1,68 @@
+/* EditProfileForm.module.css */
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editForm label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.editForm input,
+.editForm select {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.editForm input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.editForm input[type="number"]::-webkit-outer-spin-button,
+.editForm input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.editForm button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.editForm button[type="button"] {
+  background-color: #ccc;
+}
+
+.editForm button:hover {
+  background-color: #0056b3;
+}
+
+.editForm button[type="button"]:hover {
+  background-color: #aaa;
+}
+
+.editForm button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

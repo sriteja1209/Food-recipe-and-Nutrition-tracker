@@ -1,0 +1,39 @@
+/* AdminLayout.css */
+
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-content {
+  display: flex;
+  flex: 1;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 56px); /* adjust if navbar height changes */
+  overflow-y: auto;
+}
+
+.admin-navbar {
+  background-color: #212529;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #444;
+}
+
+.admin-sidebar {
+  min-width: 250px;
+  background-color: #343a40;
+  color: white;
+  min-height: 100vh;
+}
+
+.admin-sidebar a:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}

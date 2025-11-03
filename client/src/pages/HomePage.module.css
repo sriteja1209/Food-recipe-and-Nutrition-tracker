@@ -1,0 +1,82 @@
+.homePage {
+  background: linear-gradient(to right, #eef2f3, #dbe9f4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 50px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background-color: #0077b6;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #005a8d;
+  cursor: pointer;
+}
+
+.outlineBtn {
+  background-color: transparent;
+  color: #0077b6;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: 2px solid #0077b6;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.outlineBtn:hover {
+  background-color: #0077b6;
+  color: white;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}

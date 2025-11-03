@@ -1,0 +1,58 @@
+/* AddRecipe.css */
+
+.add-recipe-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.add-recipe-form label {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.add-recipe-form input,
+.add-recipe-form textarea,
+.add-recipe-form select {
+  margin-bottom: 1rem;
+}
+
+.add-recipe-form .large-textarea {
+  height: 120px;
+}
+
+.add-recipe-form .form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.add-recipe-preview {
+  display: block;
+  margin-top: 1rem;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: #28a745;
+  font-weight: 500;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #dc3545;
+  font-weight: 500;
+}

@@ -1,0 +1,31 @@
+/* NotFound.css */
+.not-found {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .not-found h2 {
+    font-size: 2rem;
+    color: #e74c3c; /* Red for error */
+  }
+  
+  .not-found p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .not-found .unauthorized-message {
+    color: #f39c12; /* Yellow for unauthorized message */
+  }
+  
+  .not-found .back-link {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #3498db; /* Blue color for the link */
+  }
+  
+  .not-found .back-link:hover {
+    text-decoration: underline;
+  }
+  

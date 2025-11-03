@@ -1,0 +1,57 @@
+.favoritesContainer {
+    padding: 2rem;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .message {
+    font-style: italic;
+    color: gray;
+  }
+  
+  .recipeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .recipeCard {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .title {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .unfavoriteButton {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  

@@ -1,0 +1,178 @@
+/* Dashboard.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.welcomeText {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.mealTypeSection {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.formCheckLabel {
+  font-size: 1rem;
+  color: #333;
+}
+
+.successText {
+  font-weight: 500;
+  color: #28a745;
+}
+
+.dangerText {
+  font-weight: 500;
+  color: #dc3545;
+}
+
+
+.doughnutGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; /* Reduced from 3rem */
+  justify-items: center;
+  margin-top: 2rem; /* Slightly reduced top margin */
+}
+
+.mainChart {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainChart canvas {
+  width: 280px !important;
+  height: 280px !important;
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0; /* Optional vertical margin between stacked charts */
+}
+
+.chartSection canvas {
+  width: 260px !important; /* Increased from 240px */
+  height: 260px !important;
+}
+
+.chartLabel {
+  margin-top: 0.4rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #444;
+}
+
+
+
+.waterSection {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #e8f4fd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.waterHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  height: 25px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 1rem;
+  background-color: #e9ecef;
+}
+
+.progressBar {
+  background-color: #00c49a;
+  transition: width 0.4s ease;
+  height: 100%;
+}
+
+.button {
+  border: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  color: white;
+}
+
+.primaryBtn {
+  background-color: #007bff;
+}
+
+.infoBtn {
+  background-color: #17a2b8;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .doughnutContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sideCharts {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .chartSection {
+    margin: 1rem;
+  }
+}
